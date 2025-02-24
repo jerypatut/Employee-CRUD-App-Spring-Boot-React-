@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "0a71a03a-61b2-4249-872a-ed51875664f0",
+		"name": "api-crud.jar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39317174",
+		"_collection_link": "https://jeri11.postman.co/workspace/jeri-Workspace~e9ce93ba-22bf-4a48-be6b-5e6c5adb3131/collection/39317174-0a71a03a-61b2-4249-872a-ed51875664f0?action=share&source=collection_link&creator=39317174"
+	},
+	"item": [
+		{
+			"name": "PostKaryawan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"jaikal\",\r\n    \"lastName\":\"jaikalPatut\",\r\n    \"email\":\"jaikalNANA@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/karyawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"karyawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getKaryawan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n \"status\" : \"success\",\r\n    \"message\": \"Data berhasil diambil\",\r\n    \"data\": [\r\n        {\r\n            \"id\": 6,\r\n            \"firstName\": \"evo\",\r\n            \"lastName\": \"jeri\",\r\n            \"email\": \"evo@gmail.com\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/karyawan/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"karyawan",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllkaryawan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"success\",\r\n    \"message\": \"Data berhasil diambil\",\r\n    \"data\": [\r\n        {\r\n            \"id\": 6,\r\n            \"firstName\": \"evo\",\r\n            \"lastName\": \"jeri\",\r\n            \"email\": \"evo@gmail.com\"\r\n        },\r\n        {\r\n            \"id\": 8,\r\n            \"firstName\": \"lius\",\r\n            \"lastName\": \"kora\",\r\n            \"email\": \"kora@gmail.com\"\r\n        },\r\n        {\r\n            \"id\": 9,\r\n            \"firstName\": \"niju\",\r\n            \"lastName\": \"nia\",\r\n            \"email\": \"niju@gmail.com\"\r\n        },\r\n        {\r\n            \"id\": 10,\r\n            \"firstName\": \"jeri\",\r\n            \"lastName\": \"jaikal\",\r\n            \"email\": \"onti898326@gmail.com\"\r\n        },\r\n        {\r\n            \"id\": 11,\r\n            \"firstName\": \"dd\",\r\n            \"lastName\": \"fdf\",\r\n            \"email\": \"d@gmail.com\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "html"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/karyawan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"karyawan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostChangeKaryawan",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"jeri\",\r\n    \"lastName\":\"jaikal\",\r\n    \"email\":\"onti898326@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/karyawan/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"karyawan",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteKaryawan",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"success\",\r\n    \"message\": \"Karyawan berhasil dihapus\",\r\n    \"data\": \"Karyawan dengan ID 8 telah dihapus.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/karyawan/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"karyawan",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
