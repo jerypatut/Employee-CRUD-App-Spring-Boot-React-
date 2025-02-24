@@ -152,7 +152,7 @@ Add Data Page ![Add Data Page](spring12.png):
 This screenshot shows the page used to add new employee data.
 
 
-Homepage (springboot.png):
+Homepage !(springboot.png):
 This screenshot displays the homepage of the Spring Boot application.
 
 
