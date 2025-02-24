@@ -158,5 +158,5 @@ This screenshot displays the homepage of the Spring Boot application.
 License
 This project is licensed under the MIT License.
 
-Developed by [jerypatut].
+# Developed by [jerypatut].
 
