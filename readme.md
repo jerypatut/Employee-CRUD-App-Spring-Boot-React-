@@ -147,7 +147,8 @@ mvn spring-boot:run
 Screenshots
 Below are screenshots of the application:
 
-Add Data Page (spring12.png):
+Add Data Page ![Add Data Page](spring12.png):
+
 This screenshot shows the page used to add new employee data.
 
 
