@@ -116,6 +116,7 @@ The backend project is managed with Maven. Below is an excerpt from the `pom.xml
     </plugins>
   </build>
 </project>
+```
 Database Configuration
 Configure your MySQL database in the application.properties file:
 
@@ -158,4 +159,4 @@ License
 This project is licensed under the MIT License.
 
 Developed by [jerypatut].
-```
+
